@@ -23,52 +23,115 @@ namespace U2AndreaTXTMSG
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
-    {
+    {       
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent();                      
         }
 
-        private void btnReplace_Click(object sender, RoutedEventArgs e)
+        private void btnTranslate_Click(object sender, RoutedEventArgs e)
         {
-            string TextEntered = txtAbreviation.Text;
+            string TextEntered = txtEntered.Text;
 
-            TextEntered = txtAbreviation.Text.ToUpper();
+            //TextEntered = txtEntered.Text.ToUpper();
 
-            for (int i = 0; i < 100; i++)
-            {
-                TextEntered = TextEntered.Replace("CUZ", "because" + Environment.NewLine);
-                TextEntered = TextEntered.Replace("CU", "see you" + Environment.NewLine);
-                TextEntered = TextEntered.Replace("see you", "CU" + Environment.NewLine);
-                TextEntered = TextEntered.Replace(":-)", "I’m happy" + Environment.NewLine);
-                TextEntered = TextEntered.Replace("I’m happy", ":-)" + Environment.NewLine);
-                TextEntered = TextEntered.Replace(":-(", "I’m unhappy" + Environment.NewLine);
-                TextEntered = TextEntered.Replace("I’m unhappy", ":-(" + Environment.NewLine);
-                TextEntered = TextEntered.Replace(";-)", "wink" + Environment.NewLine);
-                TextEntered = TextEntered.Replace("wink", ";-)" + Environment.NewLine);
-                TextEntered = TextEntered.Replace(":-P", "stick out my tongue" + Environment.NewLine);
-                TextEntered = TextEntered.Replace("stick out my tongue", ":-P" + Environment.NewLine);
-                TextEntered = TextEntered.Replace("(˜.˜)", "sleepy" + Environment.NewLine);
-                TextEntered = TextEntered.Replace("sleepy", "(˜.˜)" + Environment.NewLine);
-                TextEntered = TextEntered.Replace("TA", "totally awesome" + Environment.NewLine);
-                TextEntered = TextEntered.Replace("CCC", "Canadian Computing Competition" + Environment.NewLine);
-                TextEntered = TextEntered.Replace("TTYL", "talk to you later" + Environment.NewLine);
-                TextEntered = TextEntered.Replace("TY", " thank-you" + Environment.NewLine);
-                TextEntered = TextEntered.Replace("YW", "you’re welcome" + Environment.NewLine);
-                TextEntered = TextEntered.Replace("you’re welcome", "YW" + Environment.NewLine);
-                TextEntered = TextEntered.Replace("totally awesome", "TA" + Environment.NewLine);
-                TextEntered = TextEntered.Replace("Canadian Computing Competition", "CCC" + Environment.NewLine);
-                TextEntered = TextEntered.Replace("talk to you later", "TTYL" + Environment.NewLine);
-                TextEntered = TextEntered.Replace("thank-you", "TY " + Environment.NewLine);
-                TextEntered = TextEntered.Replace(" ", " " + Environment.NewLine);
-                //TextEntered = TextEntered.Replace("because", "CUZ" + Environment.NewLine);
-            }
-           lblOutput.Content = " " + TextEntered;
-
-        }
-        private void btnReplace1_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+                if (TextEntered == "CU")
+                {
+                    lblOutput.Content = "see you";
+                }
+                else if (TextEntered == ":-)")
+                {
+                    lblOutput.Content = "I'm happy";
+                }
+                else if (TextEntered == ":-(")
+                {
+                    lblOutput.Content = "I'm unhappy";
+                }
+                else if (TextEntered == ";-)")
+                {
+                    lblOutput.Content = "wink";
+                }
+                else if (TextEntered == ":-P")
+                {
+                    lblOutput.Content = "Stick out toungue";
+                }
+                else if (TextEntered == "(~.~)")
+                {
+                    lblOutput.Content = "sleepy";
+                }
+                else if (TextEntered == "TA")
+                {
+                    lblOutput.Content = "totally awesome";
+                }
+                else if (TextEntered == "CCC")
+                {
+                    lblOutput.Content = "Canadian Computing Competition";
+                }
+                else if (TextEntered == "CUZ")
+                {
+                    lblOutput.Content = "because";
+                }
+                else if (TextEntered == "TY")
+                {
+                    lblOutput.Content = "thank-you";
+                }
+                else if (TextEntered == "YW")
+                {
+                    lblOutput.Content = "you're welcome";
+                }
+                else if (TextEntered == "TTYL")
+                {
+                    lblOutput.Content = "talk to you later";
+                }
+                else if (TextEntered == "see you")
+                {
+                    lblOutput.Content = "CU";
+                }
+                else if (TextEntered == "I'm happy")
+                {
+                    lblOutput.Content = ":-)";
+                }
+                else if (TextEntered == "I'm unhappy")
+                {
+                    lblOutput.Content = ":-(";
+                }
+                else if (TextEntered == "wink")
+                {
+                    lblOutput.Content = ";-)";
+                }
+                else if (TextEntered == "Stick out toungue")
+                {
+                    lblOutput.Content = ":-P";
+                }
+                else if (TextEntered == "sleepy")
+                {
+                    lblOutput.Content = "(~.~)";
+                }
+                else if (TextEntered == "totally awesome")
+                {
+                    lblOutput.Content = "TA";
+                }
+                else if (TextEntered == "Canadian Computing Competition")
+                {
+                    lblOutput.Content = "CCC";
+                }
+                else if (TextEntered == "because")
+                {
+                    lblOutput.Content = "CUZ";
+                }
+                else if (TextEntered == "thank-you")
+                {
+                    lblOutput.Content = "TY";
+                }
+                else if (TextEntered == "you're welcome")
+                {
+                    lblOutput.Content = "YW";
+                }
+                else if (TextEntered == "talk to you later")
+                {
+                    lblOutput.Content = "TTYL";
+                }
+        }        
     }
 }
+

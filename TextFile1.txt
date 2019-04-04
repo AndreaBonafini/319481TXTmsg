@@ -1,0 +1,14 @@
+﻿Input
+
+Textbox-Button-Label
+
+Processing
+
+series of if statement with the text and output as the translation
+
+Output
+
+output the translation of the abbreviation 
+and viceversa in which 
+if you input the translation 
+it gives you the translation in symbols
